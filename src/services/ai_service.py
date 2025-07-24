@@ -35,7 +35,7 @@ class AIService:
             """
             
             response = self.client.chat.completions.create(
-                model="gemini-2.5-flash",
+                model="gpt-3.5-turbo",
                 messages=[
                     {"role": "system", "content": "You are a financial analyst providing insights on stock movements."},
                     {"role": "user", "content": prompt}
@@ -91,7 +91,7 @@ class AIService:
             """
             
             response = self.client.chat.completions.create(
-                model="gemini-2.5-flash",
+                model="gpt-3.5-turbo",
                 messages=[
                     {"role": "system", "content": "You are a professional financial analyst providing stock recommendations. Always respond with valid JSON."},
                     {"role": "user", "content": prompt}
@@ -135,7 +135,7 @@ class AIService:
             """
             
             response = self.client.chat.completions.create(
-                model="gemini-2.5-flash",
+                model="gpt-3.5-turbo",
                 messages=[
                     {"role": "system", "content": "You are a professional financial analyst providing expert advice on stocks and market strategies."},
                     {"role": "user", "content": prompt}
